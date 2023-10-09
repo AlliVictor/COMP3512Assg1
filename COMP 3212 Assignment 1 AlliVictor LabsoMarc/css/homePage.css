@@ -1,4 +1,129 @@
-/*Testing if this commits*/
-
-
-/*testing*/
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Define CSS variables for colors */
+  :root {
+    --pink: #ff69b4;
+    --teal: #008080;
+  }
+  
+  /* Global styles */
+  body {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header h3 {
+    margin: 5px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main.body {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Top Categories */
+  .column {
+    display: inline-block;
+    width: 700px;
+    height: 300px;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  
+  .column h3 {
+    text-align: center;
+  }
+  
+  /* Top Categories Background Colors */
+  .top-genre,
+  .studying,
+  .popular,
+  .club {
+    background-color: var(--pink);
+  }
+  
+  .top-artist,
+  .running,
+  .one-hit,
+  .acoustic {
+    background-color: var(--teal);
+  }
+  
+  /* List Styles */
+  .column ul {
+    padding-top: 2px;
+    text-align: start;
+  }
+  
+  ul > li {
+    display: inline-block;
+    list-style: none;
+  }
+  
+  li span {
+    font-weight: bold;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #e0ded1;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
