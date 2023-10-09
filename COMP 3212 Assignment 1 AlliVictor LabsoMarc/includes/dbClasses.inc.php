@@ -283,6 +283,10 @@
         }
     }
 
+    /*
+        Used for the homepage
+    */
+
     // Outputs the top 10 categories ordered from highest to lowest
     function outputTop10Category($category){
         echo "<ul>";

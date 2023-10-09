@@ -83,14 +83,14 @@
   .studying,
   .popular,
   .club {
-    background-color: var(--pink);
+    background-color: var(--blue);
   }
   
   .top-artist,
   .running,
   .one-hit,
   .acoustic {
-    background-color: var(--teal);
+    background-color: var(--blue);
   }
   
   /* List Styles */
