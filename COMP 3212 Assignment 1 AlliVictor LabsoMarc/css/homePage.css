@@ -83,14 +83,14 @@
   .studying,
   .popular,
   .club {
-    background-color: var(--blue);
+    background-color: var(--pink);
   }
   
   .top-artist,
   .running,
   .one-hit,
   .acoustic {
-    background-color: var(--blue);
+    background-color: var(--teal);
   }
   
   /* List Styles */
@@ -126,4 +126,3 @@
   footer a:hover {
     text-decoration: underline;
   }
-  

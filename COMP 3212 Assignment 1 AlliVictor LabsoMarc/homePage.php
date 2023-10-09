@@ -32,7 +32,7 @@
                 <li><img src="icons/home.PNG" alt= "home icon"/><a href="homePage.php">HOME</a></li>
                 <li><img src="icons/fav.PNG" alt= "favorites icon"/><a href="favoritesPage.php">VIEW FAVORITES</a></li>
                 <li><img src="icons/search.PNG" alt= "search icon"/><a href="searchPage.php">SEARCH</a></li>
-                <li><img src="icons/browse.PNG" alt= "browse/search icon"/><a href="browse-searchResult.php">BROWSE/SEARCH</a></li>
+                <li><img src="icons/browse.PNG" alt= "browse/search icon"/><a href="browse-searchResultsPage.php">BROWSE/SEARCH</a></li>
             </ul>
         </nav>
         <hr>
