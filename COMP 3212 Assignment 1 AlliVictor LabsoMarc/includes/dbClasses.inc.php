@@ -243,4 +243,26 @@
             return $statement->fetchAll();
         }
     }
+
+    // Outputs the top 10 categories ordered from highest to lowest
+    function outputTop10Category($category){
+        echo "<ul>";
+        foreach($category as $c){
+            echo "<li><span>" . $c['name'] . "</span> with " . $c['num'] . " songs</li>";
+            echo "<br>";
+        }
+        echo "</ul>";
+    }
+
+    //Outputs the top 10 songs
+    function outputTop10Songs($song){
+        echo "<ul>";
+        foreach($song as $s){ ?>
+            echo "<li><span><a href="singleSongPage.php?id=<?=$s['song_id']?>"><?=$s['title']?></a></span> by <?=$s['artist_name']?></li>";
+            echo "<br>";
+            <?php
+        }
+
+        echo "</ul>";
+    }
 ?>
