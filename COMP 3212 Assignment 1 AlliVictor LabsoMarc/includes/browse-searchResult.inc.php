@@ -17,8 +17,8 @@ function searchResults($songs, $name, $search){
                 <td><?=$s['year']?></td>
                 <td><?=$s['genre_name']?></td>
                 <td><?=$s['popularity']?></td>
-                <td><a href='includes/addFavorites.inc.php?id=<?=$s['song_id']?>&name=<?=$name?>&<?=$name?>=<?=$search?>' ><button class='button'>Add</button></a></td>
-                <td><a href='singlesongPage.php?id=<?=$s['song_id']?>' class='button'><button>View</button></a></td>
+                <td><a href='addFavorites.inc.php?id=<?=$s['song_id']?>&name=<?=$name?>&<?=$name?>=<?=$search?>' ><button class='button'>Add</button></a></td>
+                <td><a href='../singlesongPage.php?id=<?=$s['song_id']?>' class='button'><button>View</button></a></td>
             </tr>
         <?php }
         echo "</table>";
