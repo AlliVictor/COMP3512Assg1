@@ -4,8 +4,6 @@ include_once 'includes/dbClasses.inc.php';
 require_once 'includes/config.inc.assignment.php';
 require_once 'includes/browse-searchResult.inc.php';
 
-
-
 try{
     $conn = DatabaseHelper::createConnection(array(DBCONNSTRING,DBUSER,DBPASS));
     $songGetter = new GenresDB($conn);
@@ -15,10 +13,6 @@ try{
 }
 catch (Exception $e){ die($e->getMessage());}   
 ?>
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">

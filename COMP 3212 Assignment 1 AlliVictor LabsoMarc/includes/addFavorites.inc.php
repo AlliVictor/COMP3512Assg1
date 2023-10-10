@@ -1,12 +1,12 @@
 <?php
     session_start();
 
-    // check if session already exists, if not, initialize an empty array
+    // Checks if session already exists, if not, initialize an empty array
     if( !isset($_SESSION["favorites"]) ){
         $_SESSION["favorites"] = [];
     }
 
-    // retrieve current favorites and resave the modified array to the session
+    // Collect current favorites and resave the modified array to the session
     $favorites = $_SESSION["favorites"];
 
     if( !empty($_GET["name"]) && !empty($_GET[$_GET["name"]]) )
@@ -14,15 +14,15 @@
     else
         $str = "";
 
-    // checks if song is already in favorites
+    // Checks if the songs are already in favorites
     if( !array_search($_GET["id"], $favorites) ){
         $favorites[] = $_GET["id"];
         $_SESSION["favorites"] = $favorites;
         
-        // re-direct to view favorites
-        header("Location: favoritesPage.php?$str");
+        // Sends to favorites
+        header("Location: ../favoritesPage.php?$str");
     } else{
         $message = "Song already in favorites";
-        header("Location: favoritesPage.php?text=$message&$str");
+        header("Location: ../favoritesPage.php?text=$message&$str");
     }
 ?>

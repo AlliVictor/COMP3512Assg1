@@ -3,7 +3,6 @@
     require_once 'includes/dbClasses.inc.php';
     require_once 'includes/browse-searchResult.inc.php';
 
-
     try{
         $conn = DatabaseHelper::createConnection(array(DBCONNSTRING, DBUSER, DBPASS));
         $songsGetter = new SongsDB($conn);

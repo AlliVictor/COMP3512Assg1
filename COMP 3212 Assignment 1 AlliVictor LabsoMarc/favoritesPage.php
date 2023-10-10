@@ -14,7 +14,7 @@
     $conn = DatabaseHelper::createConnection( array(DBCONNSTRING, DBUSER, DBPASS) );
     $songsGetter = new SongsDB($conn);
 
-    // creates a query string containing the filtered search results
+    // Filters the search results
     if( !empty($_GET["name"]) && !empty($_GET[$_GET["name"]]) )
         $str = "name=" . $_GET['name'] . "&" . $_GET['name'] . "=" . $_GET[$_GET['name']];
     else
@@ -50,9 +50,9 @@
     <h2>View Favorites</h2>
 
     <main>
-        <a href='removeFavorites.inc.php?<?=$str?>' class= 'button favs'>Remove All</a>
+        <a href='includes/removeFavorites.inc.php?<?=$str?>' class= 'button favs'>Remove All</a>
 
-        <!--Returns user to filtered search results-->
+        <!--Returns to filtered search results-->
         <a href='browse-searchResultsPage.php?<?=$str?>' class= 'button favs'>Return to Browse/Result Page</a>
 
         <article>
@@ -60,7 +60,7 @@
             <br>
             <section>
                 <?php
-                    // echoes a message saying that the song is already in favorites
+                    // Displays song already in favorites
                     if( !empty($_GET["text"]) ){
                         echo $_GET["text"]; 
                     }
@@ -68,7 +68,7 @@
                     echo "<table class='centre'>";
                     outputHeader();
 
-                    // output each favorite song
+                    // Outputs the favorite songs
                     foreach($favorites as $fav_id){
                         favoritesList($songsGetter->getSong($fav_id), $str);
                     }

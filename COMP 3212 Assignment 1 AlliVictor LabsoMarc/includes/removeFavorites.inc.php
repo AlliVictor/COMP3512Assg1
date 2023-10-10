@@ -2,7 +2,7 @@
     session_start();
 
     if( !empty($_GET['id']) ){
-        //remove the single song and resave to sesisons
+        // Remove the single song and resave it to the sesison
         $favorites = $_SESSION["favorites"];
         unset($favorites[array_search($_GET["id"], $favorites)]);
         $_SESSION["favorites"] = $favorites;
@@ -16,6 +16,6 @@
     else
         $str = "";
 
-    // re-direct back to the view favorites page
-    header("Location: favoritesPage.php?$str");
+    // Sends to favorites
+    header("Location: ../favoritesPage.php?$str");
 ?>
