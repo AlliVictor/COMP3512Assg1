@@ -22,7 +22,7 @@
                 <td><?=$fav['genre_name']?></td>
                 <td><?=$fav['popularity']?></td>
                 <td><a href='includes/removeFavorites.inc.php?id=<?=$fav['song_id']?>&<?=$search?>'><button class="rm">remove</button></a></td>
-                <td><a href='../singleSongPage.php?id=<?=$fav['song_id']?>'><button class="view">view</button></a></td>
+                <td><a href='./singleSongPage.php?id=<?=$fav['song_id']?>'><button class="view">view</button></a></td>
             </tr>
         <?php }   
     }
