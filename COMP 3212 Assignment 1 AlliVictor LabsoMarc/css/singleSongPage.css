@@ -1,0 +1,53 @@
+/* Reset default styles for some elements */
+h2, h3, ul, li, b, p, main, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply styles to specific elements in the PHP page */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+b {
+    font-weight: bold;
+}
+
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul.analysis-data {
+    text-align: center;
+}
+
+ul.analysis-data li {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
