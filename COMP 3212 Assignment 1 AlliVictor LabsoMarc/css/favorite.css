@@ -1,1 +1,68 @@
-/* testing again */
+/* Reset default styles for some elements */
+h2, h3, ul, li, a, table, th, td {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply styles to specific elements in the PHP page */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.button {
+    background-color: var(--pink); /* Make sure the variable "--pink" is defined */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+a.button:hover {
+    background-color: #ff69b4; /* Change the color on hover */
+}
+
+main {
+    text-align: center;
+    margin: 20px;
+}
+
+table.centre {
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
