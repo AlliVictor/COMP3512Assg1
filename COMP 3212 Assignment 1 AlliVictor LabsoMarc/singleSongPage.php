@@ -22,6 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="css/searchPage.css" rel="stylesheet">
     <link type="text/css" href="css/homePage.css" rel="stylesheet">
+    <link type="text/css" href="css/singleSongPage.css" rel="stylesheet">
 
     <title><?=$song[0]['title']?><?=$song[0]['artist_name']?></title>
     
@@ -47,29 +48,30 @@
 <main class="body">
     <?php
         foreach($song as $songName){
-            echo " <b> Song: ".$songName['title']. "</b>"."<br>";
+            echo " <b> Song: </b> ".$songName['title']."<br>";
             echo "<br>";
-            echo "<b> Artist: ". $songName['artist_name']. "</b>"."<br>";
+            echo "<b> Artist: </b> ". $songName['artist_name']."<br>";
             echo "<br>";
-            echo "Artist type: ". $songName['type_name']."<br>";
-            echo "Genre: ". $songName['genre_name']."<br>";
-            echo "Year: ". $songName['year']."<br>";
-            echo "Duration: "; 
+            echo "<b> Artist type: </b> ". $songName['type_name']."<br>";
+            echo "<b> Genre: </b> ". $songName['genre_name']."<br>";
+            echo "<b> Year: </b> ". $songName['year']."<br>";
+            echo "<b> Duration: </b> "; 
             display($songName['duration']);
-            echo " minutes<br>";
+            echo "<b> minutes </b>". "<br>";
 
                 } 
                 echo "<br>";
             echo "<p><b>Analysis Data</b></p>";
             echo "<br>";
             foreach($song as $songName){ ?>
-                <li><?= 'BPM: ' . $songName['bpm'];?></li>
-                <li><?= 'Energy: ' . $songName['energy'];?></li>
-                <li><?= 'Liveness: ' . $songName['liveness'];?></li>
-                <li><?= 'Danceability: ' . $songName['danceability'];?></li>
-                <li><?= 'Valence: ' . $songName['valence'];?></li>
-                <li><?= 'Acousticness: ' . $songName['acousticness'];?></li>
-                <li><?= 'Popularity: ' . $songName['popularity'];?></li>
+                <li><?= '<b> BPM: </b>' . $songName['bpm'];?></li>
+                <li><?= '<b> Energy: </b>  ' . $songName['energy'];?></li>
+                <li><?= '<b> Danceability: </b>  ' . $songName['danceability'];?></li>
+                <li><?= '<b> Liveness: </b>  ' . $songName['liveness'];?></li>
+                <li><?= '<b> Valence: </b>' . $songName['valence'];?></li>
+                <li><?= '<b> Acousticness: </b>  ' . $songName['acousticness'];?></li>
+                <li><?= '<b> Speechiness: </b> ' . $songName['speechiness'];?></li>
+                <li><?= '<b> Popularity: </b> ' . $songName['popularity'];?></li>
     <?php }
            
         ?>
