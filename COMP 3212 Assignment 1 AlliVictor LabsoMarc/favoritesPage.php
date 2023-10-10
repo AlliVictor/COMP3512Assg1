@@ -50,7 +50,7 @@
     <h2>View Favorites</h2>
 
     <main>
-        <a href='includes/removeFavorites.inc.php?<?=$str?>' class= 'button favs'>Remove All</a>
+        <a href='removeFavorites.inc.php?<?=$str?>' class= 'button favs'>Remove All</a>
 
         <!--Returns user to filtered search results-->
         <a href='browse-searchResultsPage.php?<?=$str?>' class= 'button favs'>Return to Browse/Result Page</a>
