@@ -30,17 +30,16 @@ catch (Exception $e){ die($e->getMessage());}
 
 <body>
     
-<header class="header">
-    <h1>COMP 3512 - PHP Assignment</h1>
-        <h3>Victor Alli, Marc Labso<h3>
+    <header class="header">
         <hr>
         <nav>
             <ul>
-            <li><img src="imagesandicon/home.png" alt= "home icon"/><a href="homePage.php">Home</a></li>
-                <li><img src="imagesandicon/favorite.png" alt= "favorites icon"/><a href="favoritesPage.php">Favorites</a></li>
-                <li><img src="imagesandicon/search.png" alt= "search icon"/><a href="searchPage.php">Search</a></li>
-                <li><img src="imagesandicon/browse.png" alt= "browse icon"/><a href="browse-searchResultsPage.php">Browse</a></li>
-                <li><img src="imagesandicon/about.png" alt= "about us icon"/><a href="aboutUs.html">About Us</a></li>
+                <li><img src="imagesandicon/home.png" alt= "home icon" class="icon"/><a href="homePage.php">Home</a></li>
+                <li><img src="imagesandicon/favorite.png" alt= "favorites icon" class="icon"/><a href="favoritesPage.php">Favorites</a></li>
+                <li><img src="imagesandicon/search.png" alt= "search icon" class="icon"/><a href="searchPage.php">Search</a></li>
+                <li><img src="imagesandicon/browse.png" alt= "browse icon" class="icon"/><a href="browse-searchResultsPage.php">Browse</a></li>
+                <li><img src="imagesandicon/about.png" alt= "about us icon" class="icon"/><a href="aboutUs.html">About Us</a></li>
+                <p class="desc">COMP 3512 - PHP Assignment &nbsp;&nbsp;&nbsp;&nbsp; Victor Alli, Marc Labso &nbsp;&nbsp;</p>
             </ul>
         </nav>
         <hr>
@@ -90,11 +89,13 @@ catch (Exception $e){ die($e->getMessage());}
         </form>
     </main>
 
+    <hr>
     <footer>
-        <p>COMP 3512</p>
-        <p>&copy;Victor Alli, Marc Labso</p>
-        <a href="https://github.com/AlliVictor/COMP3512Assg1">Github Repository</a>
+        <li>COMP 3512</li>
+        <li>&copy;Victor Alli, Marc Labso</li>
+        <li><a href="https://github.com/AlliVictor/COMP3512Assg1">Github Repository</a></li>
     </footer>
+    <hr>
 
 </body>
 
