@@ -51,7 +51,7 @@
 
     <h2>View Favorites</h2>
 
-    <main>
+    <main class="body">
         <a href='includes/removeFavorites.inc.php?<?=$str?>' class= 'favs button'>Remove All</a>
 
         <!--Returns to filtered search results-->

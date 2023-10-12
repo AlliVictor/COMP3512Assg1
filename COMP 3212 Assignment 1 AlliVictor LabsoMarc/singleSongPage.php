@@ -74,8 +74,8 @@
                 <li><?= '<b> Speechiness: </b> ' . $songName['speechiness'];?></li>
                 <li><?= '<b> Popularity: </b> ' . $songName['popularity'];?></li>
     <?php }
-           
         ?>
+</main>
 
     <footer>
         <p>COMP 3512</p>

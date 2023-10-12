@@ -93,6 +93,7 @@
                 ?>
            </ul>
         </div>
+
         <div class="club column"> 
             <h3>At The Club</h3>
             <?php 
@@ -100,6 +101,7 @@
                 outputTop10Songs($club);
             ?>
         </div>
+
         <div class="running column"> 
             <h3>Running Songs</h3>
             <?php 
@@ -107,6 +109,7 @@
                 outputTop10Songs($run);
             ?>
         </div>
+        
         <div class="studying column"> 
             <h3>Studying</h3>
             <?php 

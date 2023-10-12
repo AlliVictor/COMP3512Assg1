@@ -46,41 +46,49 @@ catch (Exception $e){ die($e->getMessage());}
         <hr>
     </header>
 
-    <h1>Song Search</h1>
-    <form action="browse-searchResultsPage.php" method="GET">
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title"><br>
+    <main class="body">
+        <h1>Song Search</h1>
+        <form action="browse-searchResultsPage.php" method="GET">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title"><br>
 
-        <label>Artist:</label>
-        <select name="artistList" title="artist">
-        <option value='0'>Choose An Artist</option>
+            <label>Artist:</label>
+            <select name="artistList" title="artist">
+                <option value='0'>Choose An Artist</option>
                     <?=artistList($artist);?>
-        </select>
+            </select>
 
-        <label>Genre:</label>
-        <select name="genreList" title="genre">
-        <option value='0'>Choose A Genre</option>
-                    <?=genreList($song)?><br>
-        </select>
+            <label>Genre:</label>
+            <select name="genreList" title="genre">
+                <option value='0'>Choose A Genre</option>
+                        <?=genreList($song)?><br>
+            </select>
 
-        <label>Year:</label>
-        <label for="year-before">Before
-                        <input type="text" for="year-before" name="year-before-value" title="text-year-before">
-                    </label>
-                    <label for="year-after">After
-                        <input type="text" for="year-after" name="year-after-value" title="text-year-after">
-                    </label><br>
+            <label>Year:</label>
+            <label for="year-before">Before
+                <input type="text" for="year-before" name="year-before-value" title="text-year-before">
+            </label>
 
-                    <label>Popularity</label>
-                    <label for="pop-less">Less
-                        <input type="text" for="pop-less" name="pop-less-value" title="text-popularity-less">
-                    </label>
-                    <label for="pop-greater">Greater
-                        <input type="text" for="pop-greater" name="pop-greater-value" title="text-popularity-greater">
-                    </label></br>
+            <label for="year-after">After
+                    <input type="text" for="year-after" name="year-after-value" title="text-year-after">
+            </label>
+            
+            <br>
 
-        <button type="submit">Search</button>
-    </form>
+            <label>Popularity</label>
+            <label for="pop-less">Less
+                <input type="text" for="pop-less" name="pop-less-value" title="text-popularity-less">
+            </label>
+
+            <label for="pop-greater">Greater
+                <input type="text" for="pop-greater" name="pop-greater-value" title="text-popularity-greater">
+            </label>
+            
+            </br>
+
+            <button type="submit">Search</button>
+        </form>
+    </main>
 
     <footer>
         <p>COMP 3512</p>

@@ -89,7 +89,7 @@
 
     <h2>Browse / Search Results</h2>
 
-    <main>
+    <main class="body">
         <h3><?php echo $message; ?></h3>
 
         <a href='browse-searchResultsPage.php' class= 'button'>Show All</a>
