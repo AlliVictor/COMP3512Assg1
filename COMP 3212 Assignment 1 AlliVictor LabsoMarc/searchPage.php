@@ -35,10 +35,11 @@ catch (Exception $e){ die($e->getMessage());}
         <hr>
         <nav>
             <ul>
-                <li><img src="icons/home.PNG" alt= "home icon"/><a href="homePage.php">HOME</a></li>
-                <li><img src="icons/fav.PNG" alt= "favorites icon"/><a href="favoritesPage.php">VIEW FAVORITES</a></li>
-                <li><img src="icons/search.PNG" alt= "search icon"/><a href="searchPage.php">SEARCH</a></li>
-                <li><img src="icons/browse.PNG" alt= "browse/search icon"/><a href="browse-searchResultsPage.php">BROWSE/SEARCH</a></li>
+            <li><img src="imagesandicon/home.png" alt= "home icon"/><a href="homePage.php">Home</a></li>
+                <li><img src="imagesandicon/favorite.png" alt= "favorites icon"/><a href="favoritesPage.php">Favorites</a></li>
+                <li><img src="imagesandicon/search.png" alt= "search icon"/><a href="searchPage.php">Search</a></li>
+                <li><img src="imagesandicon/browse.png" alt= "browse icon"/><a href="browse-searchResultsPage.php">Browse</a></li>
+                <li><img src="imagesandicon/about.png" alt= "about us icon"/><a href="aboutUs.html">About Us</a></li>
             </ul>
         </nav>
         <hr>
@@ -79,6 +80,13 @@ catch (Exception $e){ die($e->getMessage());}
 
         <button type="submit">Search</button>
     </form>
+
+    <footer>
+        <p>COMP 3512</p>
+        <p>&copy;Victor Alli, Marc Labso</p>
+        <a href="https://github.com/AlliVictor/COMP3512Assg1">Github Repository</a>
+    </footer>
+
 </body>
 
 </html>
