@@ -1,0 +1,46 @@
+.body {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .column {
+    display: inline-block;
+    width: 700px;
+    height: 300px;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #e0ded1;
+  }
+  
+  .column h3 {
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: start;
+  }
+  
+  ul li {
+    display: inline-block;
+    list-style: none;
+  }
+  
+  ul li span {
+    font-weight: bold;
+  }
+
+  .desc {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+  }

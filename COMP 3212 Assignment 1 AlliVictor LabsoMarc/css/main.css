@@ -1,0 +1,80 @@
+/* Set the default font family and background color for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header section */
+  .header {
+    background-color: #3a2b4d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style the h1 and h3 elements within the header */
+  .header h1,
+  .header h3 {
+    margin: 0;
+  }
+  
+  /* Style the horizontal rule (hr) within the header */
+  .header hr {
+    border-color: #fff;
+  }
+  
+  /* Style the navigation list within the header */
+  .header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Style the list items within the navigation list */
+  .header nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  /* Style the icon elements */
+  .icon {
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 60px;
+  }
+  
+  /* Style links within the icon elements */
+  .icon a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Highlight links on hover within the icon elements */
+  .icon a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the footer section */
+  footer {
+    text-align: center;
+    background-color: #3a2b4d;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style links within the footer */
+  footer a {
+    background-color: #e0ded1;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #3a2b4d;
+  }
+  
+  /* Highlight links on hover within the footer */
+  footer a:hover {
+    background-color: #3a2b4d;
+    color: #fff;
+  }
+  
