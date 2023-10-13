@@ -1,6 +1,5 @@
 /* Custom Styles for Home Page */
 
-
 /* Styles for the main container */
 
 .container {
@@ -13,7 +12,6 @@
     min-height: 100vh;
     /* Ensure the container takes up at least the full viewport height */
 }
-
 
 /* Styles for the h2 heading */
 
@@ -30,9 +28,7 @@ h3 {
     color: #5C8374;
 }
 
-
 /* Styles for the main body section */
-
 .mainbody {
     flex-grow: 1;
     /* Allow the mainbody to grow and take up the remaining vertical space */
@@ -43,9 +39,7 @@ h3 {
     margin-right: 20px;
 }
 
-
 /* Styles for the top categories sections */
-
 .top-genre,
 .top-artist,
 .popular,
@@ -63,12 +57,7 @@ h3 {
     text-align: center;
 }
 
-
-/* Alternate the background colors */
-
-
 /* Styles for the list items in the top categories sections */
-
 .top-genre li,
 .top-artist li,
 .popular li,
@@ -81,7 +70,6 @@ h3 {
     margin: 5px 0;
     list-style-type: disc;
     list-style: none;
-    /* Remove bullet points */
     color: #fff;
 }
 
