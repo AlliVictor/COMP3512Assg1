@@ -50,7 +50,7 @@
         }
         else{
             $songs = $songsGetter->showAllSongs();
-            $message = "Showing all songs";
+            $message = "";
         }
         // get query strings
         $search = $_GET[$name];
@@ -91,9 +91,7 @@
 
     <main class="body">
         <h3><?php echo $message; ?></h3>
-
-        <a href='browse-searchResultsPage.php' class= 'button'>Show All</a>
-
+        
         <article>
             <section>
                 <?php

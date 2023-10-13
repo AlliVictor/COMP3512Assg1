@@ -7,8 +7,9 @@ function searchResults($songs, $name, $search){
         echo "<th>Year</th>";
         echo "<th>Genre</th>";
         echo "<th>Popularity</th>";
-        echo "<th></th>";
-        echo "<th></th>";
+        echo "<th>Add</th>";
+        echo "<th>View</th>";
+       
         echo "</tr>";
         foreach($songs as $s){ ?>
             <tr>
@@ -18,7 +19,7 @@ function searchResults($songs, $name, $search){
                 <td><?=$s['genre_name']?></td>
                 <td><?=$s['popularity']?></td>
                 <td><a href='includes/addFavorites.inc.php?id=<?=$s['song_id']?>&name=<?=$name?>&<?=$name?>=<?=$search?>' ><button class='button'>Add</button></a></td>
-                <td><a href='./singlesongPage.php?id=<?=$s['song_id']?>' class='button'><button>View</button></a></td>
+                <td><a href='./singlesongPage.php?id=<?=$s['song_id']?>' ><button class='button'>View</button></a></td>
             </tr>
         <?php }
         echo "</table>";
