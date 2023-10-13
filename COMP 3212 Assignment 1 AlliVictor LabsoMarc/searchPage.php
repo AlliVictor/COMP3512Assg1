@@ -45,9 +45,10 @@ catch (Exception $e){ die($e->getMessage());}
         <hr>
     </header>
 
+    
     <main class="body">
-        <h1>Song Search</h1>
         <form action="browse-searchResultsPage.php" method="GET">
+        <h1>Song Search</h1>
             <label for="title">Title:</label>
             <input type="text" id="title" name="title"><br>
 
@@ -74,7 +75,7 @@ catch (Exception $e){ die($e->getMessage());}
             
             <br>
 
-            <label>Popularity</label>
+            <label>Popularity:</label>
             <label for="pop-less">Less
                 <input type="text" for="pop-less" name="pop-less-value" title="text-popularity-less">
             </label>
@@ -87,8 +88,8 @@ catch (Exception $e){ die($e->getMessage());}
 
             <button type="submit">Search</button>
         </form>
-        
-        <img src="imagesandicon/musicsearch.gif" alt= "searching image" class="image"/>
+
+        <img src="imagesandicon/searchmusic.gif" alt= "searching image" class="image"/>
 
     </main>
 
