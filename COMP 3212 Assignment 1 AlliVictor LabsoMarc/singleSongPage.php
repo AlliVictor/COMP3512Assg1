@@ -80,14 +80,15 @@
             </tr>
         <?php } ?>
     </table>
+
 </main>
 
-<hr>
+    <img src="imagesandicon/singlesong.gif" alt= "single song" class="single"/>
+   <br>
     <footer>
         <li>COMP 3512</li>
         <li>&copy;Victor Alli, Marc Labso</li>
         <li><a href="https://github.com/AlliVictor/COMP3512Assg1">Github Repository</a></li>
     </footer>
-    <hr>
 </html>
 </main>

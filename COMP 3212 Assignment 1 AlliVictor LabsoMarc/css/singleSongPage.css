@@ -1,4 +1,5 @@
 /* Create a grid layout for the body */
+
 .body {
     display: grid;
     grid-template-columns: 1fr;
@@ -11,7 +12,9 @@ h2 {
     color: #5C8374;
 }
 
+
 /* Style the song table */
+
 .song-table {
     background-color: #5C8374;
     border: 3px solid #93B1A6;
@@ -19,11 +22,14 @@ h2 {
 }
 
 .song-table td {
-    text-align: center; /* Center text in table cells */
+    text-align: center;
+    /* Center text in table cells */
     padding: 10px;
 }
 
+
 /* Style the analysis table */
+
 .analysis-table {
     background-color: #5C8374;
     border: 3px solid #93B1A6;
@@ -31,19 +37,31 @@ h2 {
 }
 
 .analysis-table td {
-    text-align: center; /* Center text in table cells */
+    text-align: center;
+    /* Center text in table cells */
     padding: 10px;
 }
 
-.song-table td , .analysis-table td  {
+.song-table td,
+.analysis-table td {
     font-size: medium;
     color: black;
 }
 
+
 /* Style the variables within the tables */
-.song-table td b, .analysis-table td b {
-    font-size: larger; 
+
+.song-table td b,
+.analysis-table td b {
+    font-size: larger;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
+}
+
+.single {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
 }

@@ -64,19 +64,22 @@ tr:nth-child(odd) {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
     cursor: pointer;
     align-content: center;
     display: block;
     margin: 20px auto;
     width: 10%;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .fav-button:hover {
     background-color: 183D3D;
 }
 
+
 /* CSS for buttons */
+
 .button {
     background-color: #040D12;
     color: white;
@@ -92,4 +95,11 @@ tr:nth-child(odd) {
 
 .button:hover {
     background-color: 183D3D;
+}
+
+h3 {
+    text-align: center;
+    align-content: center;
+    display: block;
+    color: white;
 }

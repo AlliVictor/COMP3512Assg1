@@ -16,7 +16,7 @@
     function favoritesList($fav_id, $search){
         foreach($fav_id as $fav){?>
             <tr>
-                <td class='song-title'><a href='single-song.php?id=<?=$f['song_id']?>'><?=$fav['title']?></a></td>
+                <td class='song-title'><a href='singleSongPage.php?id=<?=$fav['song_id']?>'><?=$fav['title']?></a></td>
                 <td><?=$fav['artist_name']?></td>
                 <td><?=$fav['year']?></td>
                 <td><?=$fav['genre_name']?></td>

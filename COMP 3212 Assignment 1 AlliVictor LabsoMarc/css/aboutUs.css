@@ -1,19 +1,39 @@
-body {
-    text-align: center;
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    margin: 0 20px;
+    text-align: left;
+    /* Align text to the left */
     color: white;
 }
 
 a {
     text-decoration: none;
+    color: #93B1A6;
+}
+
+a:hover {
+    color: #5C8374;
+}
+
+h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-left: 380px;
 }
 
 #aboutus {
     font-size: 20px;
+    border: 3px solid #183D3D;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #040D12;
+    text-align: left;
+    line-height: 40px;
 }
 
 .about {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
+    margin-left: 70px;
+    width: 75%;
 }

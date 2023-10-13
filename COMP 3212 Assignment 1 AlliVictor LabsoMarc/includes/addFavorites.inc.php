@@ -14,15 +14,16 @@
     else
         $str = "";
 
-    // Checks if the songs are already in favorites
-    if( !array_search($_GET["id"], $favorites) ){
-        $favorites[] = $_GET["id"];
-        $_SESSION["favorites"] = $favorites;
-        
-        // Sends to favorites
-        header("Location: ../favoritesPage.php?$str");
-    } else{
-        $message = "Song already in favorites";
-        header("Location: ../favoritesPage.php?text=$message&$str");
-    }
+   // Checks if the songs are already in favorites
+$isInFavorites = array_search($_GET["id"], $favorites);
+if($isInFavorites !== false) {
+    $message = "Song already in favorites";
+    header("Location: ../favoritesPage.php?text=$message&$str");
+} else {
+    $favorites[] = $_GET["id"];
+    $_SESSION["favorites"] = $favorites;
+    
+    // Sends to favorites
+    header("Location: ../favoritesPage.php?$str");
+}
 ?>

@@ -63,8 +63,9 @@ tr:nth-child(odd) {
     border-radius: 3px;
     padding: 10px 20px;
     text-align: center;
+    font-weight: bold;
+    font-size: 20px;
     text-decoration: none;
-    font-size: 14px;
     cursor: pointer;
     align-content: center;
     display: block;
@@ -75,6 +76,7 @@ tr:nth-child(odd) {
 .search-button:hover {
     background-color: 183D3D;
 }
+
 
 /* CSS for buttons */
 
@@ -93,4 +95,11 @@ tr:nth-child(odd) {
 
 .button:hover {
     background-color: 183D3D;
+}
+
+h3 {
+    text-align: center;
+    align-content: center;
+    display: block;
+    color: white;
 }

@@ -58,6 +58,8 @@
             <br>
             <section>
                 <?php
+                
+                echo "<h3>";
                     // Displays song already in favorites
                     if( !empty($_GET["text"]) ){
                         echo $_GET["text"]; 
@@ -65,7 +67,10 @@
 
                     echo "<table class='centre'>";
                     outputHeader();
-
+                    echo "</h3>";
+                    ?>
+                    <br>
+                    <?php
                     // Outputs the favorite songs
                     foreach($favorites as $fav_id){
                         favoritesList($songsGetter->getSong($fav_id), $str);
@@ -78,12 +83,12 @@
         
     </main>
 
-    <hr>
+  
     <footer>
         <li>COMP 3512</li>
         <li>&copy;Victor Alli, Marc Labso</li>
         <li><a href="https://github.com/AlliVictor/COMP3512Assg1">Github Repository</a></li>
     </footer>
-    <hr>
+   
 </body>
 </html>
