@@ -1,31 +1,49 @@
-h2 {
-    text-align: center;
-    color: white;
-}
-
+/* Create a grid layout for the body */
 .body {
-    color: white;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-bottom: 50px;
+    margin: 50px;
 }
 
-.song-table,
-.analysis-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+h2 {
+    color: #5C8374;
 }
 
-.song-table th,
-.song-table td,
-.analysis-table th,
-.analysis-table td {
-    border: 1px solid #183D3D;
+/* Style the song table */
+.song-table {
+    background-color: #5C8374;
+    border: 3px solid #93B1A6;
+    border-radius: 3px;
+}
+
+.song-table td {
+    text-align: center; /* Center text in table cells */
     padding: 10px;
-    text-align: left;
 }
 
-.song-table th,
-.analysis-table th {
-    background-color: #93B1A6;
-    color: #183D3D;
+/* Style the analysis table */
+.analysis-table {
+    background-color: #5C8374;
+    border: 3px solid #93B1A6;
+    border-radius: 3px;
+}
+
+.analysis-table td {
+    text-align: center; /* Center text in table cells */
+    padding: 10px;
+}
+
+.song-table td , .analysis-table td  {
+    font-size: medium;
+    color: black;
+}
+
+/* Style the variables within the tables */
+.song-table td b, .analysis-table td b {
+    font-size: larger; 
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
 }

@@ -43,25 +43,28 @@
         <hr>
     </header>
 
-    <h2>Song Info</h2>
 
-    <main class="body">
+    
+<main class="body">
+
+    <h2>Song Info</h2>
     <table class="song-table">
-        <?php
-        foreach($song as $songName){
-            echo "<tr>";
-            echo "<td><b>Song:</b> " . $songName['title'] . "</td>";
-            echo "<td><b>Artist:</b> " . $songName['artist_name'] . "</td>";
-            echo "<td><b>Artist type:</b> " . $songName['type_name'] . "</td>";
-            echo "<td><b>Genre:</b> " . $songName['genre_name'] . "</td>";
-            echo "<td><b>Year:</b> " . $songName['year'] . "</td>";
-            echo "<td><b>Duration:</b> " . $songName['duration'] . " minutes</td>";
-            echo "</tr>";
-        }
-        ?>
+    <?php
+       foreach($song as $songName){ ?>
+        <tr>
+           <td><b>Song:</b> <?= $songName['title']; ?></td>
+           <td><b>Artist:</b> <?= $songName['artist_name']; ?></td>
+           <td><b>Artist Type:</b> <?= $songName['type_name']; ?></td>
+           <td><b>Genre:</b> <?= $songName['genre_name']; ?></td>
+           <td><b>Year:</b> <?= $songName['year']; ?></td>
+           <td><b>Duration:</b> <?= display($songName['duration']); ?></td>
+       </tr>
+     <?php  } ?>
     </table>
     <br>
-    <p><b>Analysis Data</b></p>
+    
+    <br>
+    <h2> Analysis Data</h2>
     <table class="analysis-table">
         <?php
         foreach($song as $songName){ ?>
