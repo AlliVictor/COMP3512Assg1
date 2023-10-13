@@ -79,12 +79,8 @@
             <h3>Longest Acoustic Songs</h3>
                 <ul>
                     <?php
-                        $song = $songGetter -> getTop10LongestAcoustic();
-                        foreach($song as $key){ 
-                            echo '<li><span><a href="single-song.php?id=' . $key['song_id'] . '">' . $key['title'] . '</a></span> 
-                            by ' . $key['artist_name'] . ' (' . $key['duration'] . ')</li>';
-                            echo "<br>";
-                        }
+                        $longAcoustic = $songGetter->getTop10LongestAcoustic();
+                        outputTop10Songs($longAcoustic);
                     ?>
             </ul>
             </div>
@@ -115,6 +111,7 @@
         </div>
     </div>
 
+</br>
     <hr>
     <footer>
         <li>COMP 3512</li>

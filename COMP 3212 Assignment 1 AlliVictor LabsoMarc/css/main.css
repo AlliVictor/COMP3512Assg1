@@ -1,27 +1,35 @@
 /* Styles for the body */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #101820;
+    background-color: #040D12;
 }
 
+
 /* Header Styles */
+
 header {
-    background-color: #101820;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
 
 hr {
-    border: 1px solid #fff;
+    border: 3px solid #93B1A6;
+    border-radius: 3px;
 }
 
+
 /* Navigation Styles */
+
 nav {
     display: flex;
-    justify-content: space-between; /* Distribute items horizontally with space in between */
+    justify-content: space-between;
+    /* Distribute items horizontally with space in between */
     align-items: center;
-    background-color: #333; /* Add background color */
+    background-color: #183D3D;
+    border-radius: 15px;
+    /* Add background color */
 }
 
 nav ul {
@@ -30,7 +38,8 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px; /* Adjust the right margin for spacing */
+    margin-right: 20px;
+    /* Adjust the right margin for spacing */
     display: flex;
     align-items: center;
 }
@@ -41,24 +50,37 @@ nav img {
     margin-right: 10px;
 }
 
+
 /* Remove color change on link click */
+
 nav a {
     text-decoration: none;
-    color: #fff; /* Set link text color to white */
+    color: #fff;
+    /* Set link text color to white */
 }
+
+nav a:hover {
+    color: #93B1A6;
+}
+
 
 /* Styling for the .desc p */
+
 .desc {
-    position: absolute; /* Position it absolutely within the header */
-    right: 20px; /* Adjust the distance from the right side as needed */
+    position: absolute;
+    /* Position it absolutely within the header */
+    right: 20px;
+    /* Adjust the distance from the right side as needed */
 }
 
+
 /* Styles for the footer */
+
 footer {
     justify-content: space-between;
     display: flex;
     list-style: none;
-    background-color: #333; 
+    background-color: #183D3D;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -67,4 +89,8 @@ footer {
 footer a {
     text-decoration: none;
     color: #fff;
+}
+
+footer a:hover {
+    color: #93B1A6;
 }

@@ -1,6 +1,8 @@
 /* Custom Styles for Home Page */
 
+
 /* Styles for the main container */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -8,10 +10,13 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    min-height: 100vh;
+    /* Ensure the container takes up at least the full viewport height */
 }
 
+
 /* Styles for the h2 heading */
+
 h2 {
     font-size: 24px;
     color: #fff;
@@ -22,11 +27,15 @@ h2 {
 h3 {
     font-size: 24px;
     margin: 20px 0;
+    color: #5C8374;
 }
 
+
 /* Styles for the main body section */
+
 .mainbody {
-    flex-grow: 1; /* Allow the mainbody to grow and take up the remaining vertical space */
+    flex-grow: 1;
+    /* Allow the mainbody to grow and take up the remaining vertical space */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -34,25 +43,59 @@ h3 {
     margin-right: 20px;
 }
 
+
 /* Styles for the top categories sections */
-.top-genre, .top-artist, .popular, .one-hit, .acoustic, .club, .running, .studying {
-    border: 1px solid #ccc;
+
+.top-genre,
+.top-artist,
+.popular,
+.one-hit,
+.acoustic,
+.club,
+.running,
+.studying {
+    border: 3px solid #183D3D;
+    border-radius: 10px;
     padding: 10px;
-    background-color: #3366cc;
+    background-color: #040D12;
+    text-decoration: none;
     color: #fff;
+    text-align: center;
 }
+
 
 /* Alternate the background colors */
-.top-genre:nth-child(even), .top-artist:nth-child(even), .popular:nth-child(even), .one-hit:nth-child(even),
-.acoustic:nth-child(even), .club:nth-child(even), .running:nth-child(even), .studying:nth-child(even) {
-    background-color: #000;
-}
+
 
 /* Styles for the list items in the top categories sections */
-.top-genre li, .top-artist li, .popular li, .one-hit li, .acoustic li, .club li, .running li, .studying li {
+
+.top-genre li,
+.top-artist li,
+.popular li,
+.one-hit li,
+.acoustic li,
+.club li,
+.running li,
+.studying li {
     font-size: 14px;
     margin: 5px 0;
     list-style-type: disc;
-    list-style: none; /* Remove bullet points */
+    list-style: none;
+    /* Remove bullet points */
     color: #fff;
+}
+
+.output {
+    list-style-type: none;
+    padding: 0;
+}
+
+.output li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.output li a:hover {
+    color: #93B1A6;
 }
