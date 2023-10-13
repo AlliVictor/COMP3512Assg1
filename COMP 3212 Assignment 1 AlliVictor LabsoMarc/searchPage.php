@@ -87,6 +87,9 @@ catch (Exception $e){ die($e->getMessage());}
 
             <button type="submit">Search</button>
         </form>
+        
+        <img src="imagesandicon/musicsearch.gif" alt= "searching image" class="image"/>
+
     </main>
 
     <hr>

@@ -1,0 +1,74 @@
+.body {
+    background-color: #93B1A6;
+    display: flex;
+    justify-content: flex-start;
+}
+
+h1 {
+    color: #183D3D;
+}
+
+form {
+    background-color: #93B1A6;
+    width: 300px;
+    max-height: calc(100vh - 100px); /* Adjust the height as needed */
+    margin-right: 20px;
+    overflow-y: auto; /* Add vertical scrollbar if content overflows */
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #5C8374;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #5C8374;
+}
+
+input[type="text"] {
+    background-color: #93B1A6;
+}
+
+button {
+    background-color: #5C8374;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #183D3D;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+
+/* Style before and after pseudo-elements */
+label:before,
+label:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+}
+
+/* Arrange Less and Greater inputs side by side */
+label[for="pop-less"],
+label[for="pop-greater"] {
+    display: inline-block;
+    width: 50%;
+}
+
+/* Make form a square */
+form {
+    height: 300px;
+}
