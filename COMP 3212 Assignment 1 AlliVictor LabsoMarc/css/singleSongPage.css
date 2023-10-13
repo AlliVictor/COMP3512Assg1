@@ -1,0 +1,31 @@
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.body {
+    color: white;
+    text-align: center;
+}
+
+.song-table,
+.analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.song-table th,
+.song-table td,
+.analysis-table th,
+.analysis-table td {
+    border: 1px solid #183D3D;
+    padding: 10px;
+    text-align: left;
+}
+
+.song-table th,
+.analysis-table th {
+    background-color: #93B1A6;
+    color: #183D3D;
+}

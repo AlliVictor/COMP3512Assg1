@@ -76,6 +76,14 @@ nav a:hover {
 
 /* Styles for the footer */
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: auto;
+}
+
 footer {
     justify-content: space-between;
     display: flex;

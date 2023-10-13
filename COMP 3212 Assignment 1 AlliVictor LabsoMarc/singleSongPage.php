@@ -45,35 +45,38 @@
 
     <h2>Song Info</h2>
 
-<main class="body">
-    <?php
+    <main class="body">
+    <table class="song-table">
+        <?php
         foreach($song as $songName){
-            echo " <b> Song: </b> ".$songName['title']."<br>";
-            echo "<br>";
-            echo "<b> Artist: </b> ". $songName['artist_name']."<br>";
-            echo "<br>";
-            echo "<b> Artist type: </b> ". $songName['type_name']."<br>";
-            echo "<b> Genre: </b> ". $songName['genre_name']."<br>";
-            echo "<b> Year: </b> ". $songName['year']."<br>";
-            echo "<b> Duration: </b> "; 
-            display($songName['duration']);
-            echo "<b> minutes </b>". "<br>";
-
-                } 
-                echo "<br>";
-            echo "<p><b>Analysis Data</b></p>";
-            echo "<br>";
-            foreach($song as $songName){ ?>
-                <li><?= '<b> BPM: </b>' . $songName['bpm'];?></li>
-                <li><?= '<b> Energy: </b>  ' . $songName['energy'];?></li>
-                <li><?= '<b> Danceability: </b>  ' . $songName['danceability'];?></li>
-                <li><?= '<b> Liveness: </b>  ' . $songName['liveness'];?></li>
-                <li><?= '<b> Valence: </b>' . $songName['valence'];?></li>
-                <li><?= '<b> Acousticness: </b>  ' . $songName['acousticness'];?></li>
-                <li><?= '<b> Speechiness: </b> ' . $songName['speechiness'];?></li>
-                <li><?= '<b> Popularity: </b> ' . $songName['popularity'];?></li>
-    <?php }
+            echo "<tr>";
+            echo "<td><b>Song:</b> " . $songName['title'] . "</td>";
+            echo "<td><b>Artist:</b> " . $songName['artist_name'] . "</td>";
+            echo "<td><b>Artist type:</b> " . $songName['type_name'] . "</td>";
+            echo "<td><b>Genre:</b> " . $songName['genre_name'] . "</td>";
+            echo "<td><b>Year:</b> " . $songName['year'] . "</td>";
+            echo "<td><b>Duration:</b> " . $songName['duration'] . " minutes</td>";
+            echo "</tr>";
+        }
         ?>
+    </table>
+    <br>
+    <p><b>Analysis Data</b></p>
+    <table class="analysis-table">
+        <?php
+        foreach($song as $songName){ ?>
+            <tr>
+                <td><b>BPM:</b> <?= $songName['bpm']; ?></td>
+                <td><b>Energy:</b> <?= $songName['energy']; ?></td>
+                <td><b>Danceability:</b> <?= $songName['danceability']; ?></td>
+                <td><b>Liveness:</b> <?= $songName['liveness']; ?></td>
+                <td><b>Valence:</b> <?= $songName['valence']; ?></td>
+                <td><b>Acousticness:</b> <?= $songName['acousticness']; ?></td>
+                <td><b>Speechiness:</b> <?= $songName['speechiness']; ?></td>
+                <td><b>Popularity:</b> <?= $songName['popularity']; ?></td>
+            </tr>
+        <?php } ?>
+    </table>
 </main>
 
 <hr>
