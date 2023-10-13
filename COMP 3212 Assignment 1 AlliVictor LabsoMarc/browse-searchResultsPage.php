@@ -53,7 +53,7 @@
             $message = "";
         }
         // get query strings
-        $search = $_GET[$name];
+        $search = isset($_GET[$name]) ? $_GET[$name] : '';
     } catch(Exception $e){
         die($e->getMessage());
     }
@@ -102,6 +102,7 @@
                 ?>
             </section>
         </article> 
+        <a href='browse-searchResultsPage.php' class= 'button'>Show All</a>
     </main>
 
     <hr>
