@@ -49,13 +49,10 @@
         <hr>
     </header>
     <h2>View Favorites</h2>
+        <a href='includes/removeFavorites.inc.php?<?=$str?>' class= ' fav-button'>Remove All</a>
+        <a href='browse-searchResultsPage.php?<?=$str?>' class= ' fav-button'>Return to Browse/Result Page</a>
 
     <main class="body">
-        <a href='includes/removeFavorites.inc.php?<?=$str?>' class= 'favs button'>Remove All</a>
-
-        <!--Returns to filtered search results-->
-        <a href='browse-searchResultsPage.php?<?=$str?>' class= 'favs button'>Return to Browse/Result Page</a>
-
         <article>
             <br>
             <br>
@@ -78,6 +75,7 @@
                 ?>
             </section>
         </article> 
+        
     </main>
 
     <hr>

@@ -56,6 +56,25 @@ tr:nth-child(odd) {
     color: white;
 }
 
+.search-button {
+    background-color: #93B1A6;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    align-content: center;
+    display: block;
+    margin: 20px auto;
+    width: 10%;
+}
+
+.search-button:hover {
+    background-color: 183D3D;
+}
 
 /* CSS for buttons */
 

@@ -1,0 +1,95 @@
+/* CSS for the table */
+
+h2 {
+    text-align: center;
+    color: #93B1A6;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    ;
+}
+
+th,
+td {
+    /* Remove vertical borders */
+    border-left: none;
+    border-right: none;
+    /* Keep only horizontal borders */
+    border-top: 3px solid black;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #183D3D;
+    color: white;
+}
+
+
+/* Set even rows background color */
+
+tr:nth-child(even) {
+    background-color: #5C8374;
+}
+
+
+/* Set odd rows background color */
+
+tr:nth-child(odd) {
+    background-color: #93B1A6;
+}
+
+.song-title a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.song-title a:hover {
+    color: white;
+}
+
+.fav-button {
+    background-color: #93B1A6;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    align-content: center;
+    display: block;
+    margin: 20px auto;
+    width: 10%;
+}
+
+.fav-button:hover {
+    background-color: 183D3D;
+}
+
+/* CSS for buttons */
+.button {
+    background-color: #040D12;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: 183D3D;
+}

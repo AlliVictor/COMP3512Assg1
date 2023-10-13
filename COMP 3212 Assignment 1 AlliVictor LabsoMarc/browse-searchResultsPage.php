@@ -88,6 +88,7 @@
     </header>
 
     <h2>Browse / Search Results</h2>
+    <a href='browse-searchResultsPage.php' class= 'search-button'>Show All</a>
 
     <main class="body">
         <h3><?php echo $message; ?></h3>
@@ -102,7 +103,7 @@
                 ?>
             </section>
         </article> 
-        <a href='browse-searchResultsPage.php' class= 'button'>Show All</a>
+        
     </main>
 
     <hr>
