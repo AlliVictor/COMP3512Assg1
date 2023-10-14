@@ -1,9 +1,10 @@
-/* CSS for the table */
-
 h2 {
     text-align: center;
     color: #93B1A6;
 }
+
+
+/* CSS for the table */
 
 table {
     width: 80%;
@@ -17,10 +18,8 @@ table {
 
 th,
 td {
-    /* Remove vertical borders */
     border-left: none;
     border-right: none;
-    /* Keep only horizontal borders */
     border-top: 3px solid black;
     border-bottom: 1px solid #ddd;
     padding: 10px;
@@ -32,19 +31,16 @@ th {
     color: white;
 }
 
-
-/* Set even rows background color */
-
 tr:nth-child(even) {
     background-color: #5C8374;
 }
 
-
-/* Set odd rows background color */
-
 tr:nth-child(odd) {
     background-color: #93B1A6;
 }
+
+
+/* css for song titles on table */
 
 .song-title a {
     text-decoration: none;
@@ -52,9 +48,15 @@ tr:nth-child(odd) {
     font-weight: bold;
 }
 
+
+/* css for when user hovers over title */
+
 .song-title a:hover {
     color: white;
 }
+
+
+/* css for add to favorite button */
 
 .fav-button {
     background-color: #93B1A6;
@@ -72,6 +74,9 @@ tr:nth-child(odd) {
     font-weight: bold;
     font-size: 17px;
 }
+
+
+/* css for when user hover overs favorite button */
 
 .fav-button:hover {
     background-color: 183D3D;
@@ -93,9 +98,23 @@ tr:nth-child(odd) {
     cursor: pointer;
 }
 
+
+/* css for button hover */
+
 .button:hover {
     background-color: 183D3D;
 }
+
+
+/* css for h2 */
+
+h2 {
+    text-align: center;
+    color: #93B1A6;
+}
+
+
+/* css for h3 */
 
 h3 {
     text-align: center;

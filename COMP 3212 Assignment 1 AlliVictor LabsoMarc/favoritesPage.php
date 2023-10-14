@@ -52,6 +52,7 @@
         <a href='includes/removeFavorites.inc.php?<?=$str?>' class= ' fav-button'>Remove All</a>
         <a href='browse-searchResultsPage.php?<?=$str?>' class= ' fav-button'>Return to Browse/Result Page</a>
 
+        <!-- this displays the favorite songs the user selected -->
     <main class="body">
         <article>
             <br>

@@ -1,4 +1,5 @@
 <?php
+// function that outputs table of songs in data
 function searchResults($songs, $name, $search){
         echo "<table>";
         echo "<tr>";

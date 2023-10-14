@@ -1,6 +1,6 @@
 <?php
     // A class used to reduce repeat code when dealing with a database.
-    // Refrence: from Lab14a.
+    // Reference: from Lab14a.
     class DatabaseHelper{
     
         public static function createConnection($values = array()){

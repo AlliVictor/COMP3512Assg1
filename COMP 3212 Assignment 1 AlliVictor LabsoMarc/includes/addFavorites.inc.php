@@ -1,4 +1,5 @@
 <?php
+// this adds a song to favorites page
     session_start();
 
     // Checks if session already exists, if not, initialize an empty array

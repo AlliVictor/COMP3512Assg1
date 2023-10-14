@@ -47,6 +47,7 @@ catch (Exception $e){ die($e->getMessage());}
 
     
     <main class="body">
+        <!-- this displays the search form -->
         <form action="browse-searchResultsPage.php" method="GET">
         <h1>Song Search</h1>
             <label for="title">Title:</label>

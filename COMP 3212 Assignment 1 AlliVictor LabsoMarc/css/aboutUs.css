@@ -1,27 +1,40 @@
+/* css for body */
+
 .body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 150px;
     margin: 0 20px;
     text-align: left;
-    /* Align text to the left */
     color: white;
 }
+
+
+/* css for a tag */
 
 a {
     text-decoration: none;
     color: #93B1A6;
 }
 
+
+/* css when user hovers the a tag */
+
 a:hover {
     color: #5C8374;
 }
+
+
+/* css for h2 */
 
 h2 {
     font-size: 24px;
     color: #fff;
     margin-left: 380px;
 }
+
+
+/* css for about us id for paragraph */
 
 #aboutus {
     font-size: 20px;
@@ -32,6 +45,9 @@ h2 {
     text-align: left;
     line-height: 40px;
 }
+
+
+/* css about image in about page */
 
 .about {
     margin-left: 70px;

@@ -50,6 +50,7 @@
     <h2>Song Info</h2>
     <table class="song-table">
     <?php
+    /* this outputs the table for the song */
        foreach($song as $songName){ ?>
         <tr>
            <td><b>Song:</b> <?= $songName['title']; ?></td>
@@ -67,6 +68,7 @@
     <h2> Analysis Data</h2>
     <table class="analysis-table">
         <?php
+         /* this outputs the analysis data for the song */
         foreach($song as $songName){ ?>
             <tr>
                 <td><b>BPM:</b> <?= $songName['bpm']; ?></td>

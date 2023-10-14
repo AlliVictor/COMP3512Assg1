@@ -1,8 +1,9 @@
 <?php
+// this removes a song in favorites page
     session_start();
 
     if( !empty($_GET['id']) ){
-        // Remove the single song and resave it to the sesison
+        // Remove the single song and resave it to the session
         $favorites = $_SESSION["favorites"];
         unset($favorites[array_search($_GET["id"], $favorites)]);
         $_SESSION["favorites"] = $favorites;

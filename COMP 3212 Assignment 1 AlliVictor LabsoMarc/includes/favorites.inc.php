@@ -1,4 +1,5 @@
 <?php
+// function that outputs info about song in favorites
     function outputHeader(){
         echo "<tr>";
         echo "<th>Title</th>";

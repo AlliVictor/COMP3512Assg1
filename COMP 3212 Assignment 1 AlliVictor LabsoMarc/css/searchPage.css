@@ -1,10 +1,14 @@
+/* css for the body of page */
+
 .body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 400px; /* Optional gap between the form and image */
-  }
+    gap: 400px;
+}
+
 
 /* CSS for .main */
+
 .main {
     background-color: #5C8374;
     padding: 40px;
@@ -13,19 +17,23 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 80%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the element horizontally */
-    justify-content: flex-start; /* Align content at the top */
+    width: 80%;
+    margin: 0 auto;
+    justify-content: flex-start;
 }
+
 
 /* CSS for the image */
+
 .image {
     padding-top: 100px;
-    width: 70%; /* Increase the width */
-    height: 70%; /* Increase the height */
+    width: 70%;
+    height: 70%;
 }
 
+
 /* CSS for form */
+
 form {
     background-color: #5C8374;
     border-radius: 10px;
@@ -35,19 +43,28 @@ form {
     margin-left: 20px;
 }
 
+
+/* css for just label */
+
 label {
-    font-weight:bold;
+    font-weight: bold;
 }
 
+
 /* CSS for label, input, select */
-label, input[type="text"], select {
+
+label,
+input[type="text"],
+select {
     display: block;
     width: 90%;
     margin-bottom: 10px;
     padding: 5px;
 }
 
+
 /* CSS for specific labels and inputs */
+
 label[for="year-before"],
 label[for="year-after"],
 label[for="pop-less"],
@@ -56,12 +73,14 @@ input#year-before,
 input#year-after,
 input#pop-less,
 input#pop-greater {
-    width: 45%; 
+    width: 45%;
     display: inline-block;
-    margin-right: 2%; /* Add some spacing between elements */
+    margin-right: 2%;
 }
 
+
 /* CSS for the submit button */
+
 button[type="submit"] {
     width: 100%;
     background-color: #183D3D;
@@ -72,6 +91,9 @@ button[type="submit"] {
     cursor: pointer;
     margin-top: 10px;
 }
+
+
+/* css for when user hover button */
 
 button[type="submit"]:hover {
     background-color: #93B1A6;

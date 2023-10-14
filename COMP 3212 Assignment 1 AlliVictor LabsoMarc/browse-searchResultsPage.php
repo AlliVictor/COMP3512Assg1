@@ -97,7 +97,7 @@
             <section>
                 <?php
                 /*
-                * outputs the songs that contains the requirements the user is seraching for
+                * outputs the songs that contains the requirements the user is searching for
                 */
                     searchResults($songs, $name, $search);
                 ?>

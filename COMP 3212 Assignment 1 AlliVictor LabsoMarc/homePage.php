@@ -41,6 +41,7 @@
 
     <h2>Top Music Categories</h2>
 
+    <!-- this displays the grid for each categories -->
     <main class="body">
         <div class="mainbody">
             <div class="top-genre column"> 

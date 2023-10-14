@@ -9,13 +9,16 @@ body {
 }
 
 
-/* Header Styles */
+/* css fpr header */
 
 header {
     color: #fff;
     text-align: center;
     padding: 20px;
 }
+
+
+/* css for horizontal line on nav */
 
 hr {
     border: 3px solid #93B1A6;
@@ -28,11 +31,9 @@ hr {
 nav {
     display: flex;
     justify-content: space-between;
-    /* Distribute items horizontally with space in between */
     align-items: center;
     background-color: #183D3D;
     border-radius: 15px;
-    /* Add background color */
 }
 
 nav ul {
@@ -42,7 +43,6 @@ nav ul {
 
 nav li {
     margin-right: 20px;
-    /* Adjust the right margin for spacing */
     display: flex;
     align-items: center;
 }
@@ -53,27 +53,18 @@ nav img {
     margin-right: 10px;
 }
 
-
-/* Remove color change on link click */
-
 nav a {
     text-decoration: none;
     color: #fff;
-    /* Set link text color to white */
 }
 
 nav a:hover {
     color: #93B1A6;
 }
 
-
-/* Styling for the .desc p */
-
 .desc {
     position: absolute;
-    /* Position it absolutely within the header */
     right: 20px;
-    /* Adjust the distance from the right side as needed */
 }
 
 
